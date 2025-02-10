@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/components/styles/EditProfileForm.module.css"],"sourcesContent":[".form {\n    background: #fff;\n    border-radius: 8px;\n    padding: 24px;\n    box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n  }\n  \n  .field {\n    margin-bottom: 16px;\n  }\n  \n  .field label {\n    display: block;\n    margin-bottom: 8px;\n    font-weight: 600;\n  }\n  \n  .field input,\n  .field textarea {\n    width: 100%;\n    padding: 8px 12px;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n  }\n  \n  .avatarPreview {\n    width: 100px;\n    height: 100px;\n    border-radius: 50%;\n    object-fit: cover;\n    margin-top: 8px;\n  }\n  \n  .actions {\n    display: flex;\n    justify-content: flex-end;\n    gap: 12px;\n  }\n  \n  .saveButton {\n    background: #28a745;\n    color: #fff;\n    border: none;\n    padding: 10px 20px;\n    border-radius: 4px;\n    cursor: pointer;\n  }\n  \n  .saveButton:hover {\n    background: #218838;\n  }\n  \n  .cancelButton {\n    background: #dc3545;\n    color: #fff;\n    border: none;\n    padding: 10px 20px;\n    border-radius: 4px;\n    cursor: pointer;\n  }\n  \n  .cancelButton:hover {\n    background: #c82333;\n  }\n  "],"names":[],"mappings":"AAAA;;;;;;;AAOE;;;;AAIA;;;;;;AAMA;;;;;;;AAQA;;;;;;;;AAQA;;;;;;AAMA;;;;;;;;;AASA;;;;AAIA;;;;;;;;;AASA"}},
+    {"offset": {"line": 64, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

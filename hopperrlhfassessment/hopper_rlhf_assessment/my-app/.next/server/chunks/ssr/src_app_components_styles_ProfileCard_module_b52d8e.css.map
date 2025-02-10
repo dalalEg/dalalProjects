@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/components/styles/ProfileCard.module.css"],"sourcesContent":[".card {\n    background: #fff;\n    border-radius: 8px;\n    padding: 24px;\n    box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n    text-align: center;\n  }\n  \n  .avatar {\n    width: 120px;\n    height: 120px;\n    border-radius: 50%;\n    object-fit: cover;\n    margin-bottom: 16px;\n  }\n  \n  .name {\n    font-size: 1.8rem;\n    margin: 8px 0;\n  }\n  \n  .email {\n    color: #666;\n    margin-bottom: 16px;\n  }\n  \n  .bio {\n    color: #333;\n    margin-bottom: 24px;\n  }\n  \n  .editButton {\n    background: #0070f3;\n    color: #fff;\n    border: none;\n    padding: 12px 24px;\n    border-radius: 4px;\n    cursor: pointer;\n  }\n  \n  .editButton:hover {\n    background: #005bb5;\n  }\n  "],"names":[],"mappings":"AAAA;;;;;;;;AAQE;;;;;;;;AAQA;;;;;AAKA;;;;;AAKA;;;;;AAKA;;;;;;;;;AASA"}},
+    {"offset": {"line": 44, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,46 @@
+/* [project]/src/app/components/styles/ProfileCard.module.css [app-client] (css) */
+.ProfileCard-module__uw9ddG__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px #0000001a;
+  text-align: center;
+}
+
+.ProfileCard-module__uw9ddG__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.ProfileCard-module__uw9ddG__name {
+  font-size: 1.8rem;
+  margin: 8px 0;
+}
+
+.ProfileCard-module__uw9ddG__email {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.ProfileCard-module__uw9ddG__bio {
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.ProfileCard-module__uw9ddG__editButton {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ProfileCard-module__uw9ddG__editButton:hover {
+  background: #005bb5;
+}
+
+/*# sourceMappingURL=src_app_components_styles_ProfileCard_module_b52d8e.css.map*/

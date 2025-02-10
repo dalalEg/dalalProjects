@@ -1,0 +1,66 @@
+/* [project]/src/app/components/styles/EditProfileForm.module.css [app-client] (css) */
+.EditProfileForm-module__BjI_xW__form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.EditProfileForm-module__BjI_xW__field {
+  margin-bottom: 16px;
+}
+
+.EditProfileForm-module__BjI_xW__field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.EditProfileForm-module__BjI_xW__field input, .EditProfileForm-module__BjI_xW__field textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.EditProfileForm-module__BjI_xW__avatarPreview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 8px;
+}
+
+.EditProfileForm-module__BjI_xW__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.EditProfileForm-module__BjI_xW__saveButton {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.EditProfileForm-module__BjI_xW__saveButton:hover {
+  background: #218838;
+}
+
+.EditProfileForm-module__BjI_xW__cancelButton {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.EditProfileForm-module__BjI_xW__cancelButton:hover {
+  background: #c82333;
+}
+
+/*# sourceMappingURL=src_app_components_styles_EditProfileForm_module_b52d8e.css.map*/

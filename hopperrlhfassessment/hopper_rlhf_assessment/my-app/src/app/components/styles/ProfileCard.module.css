@@ -1,0 +1,44 @@
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+  
+  .name {
+    font-size: 1.8rem;
+    margin: 8px 0;
+  }
+  
+  .email {
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  .bio {
+    color: #333;
+    margin-bottom: 24px;
+  }
+  
+  .editButton {
+    background: #0070f3;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .editButton:hover {
+    background: #005bb5;
+  }
+  

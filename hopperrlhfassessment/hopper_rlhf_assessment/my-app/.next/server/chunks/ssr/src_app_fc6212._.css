@@ -1,0 +1,127 @@
+/* [project]/src/app/components/styles/ProfileCard.module.css [app-client] (css) */
+.ProfileCard-module__uw9ddG__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px #0000001a;
+  text-align: center;
+}
+
+.ProfileCard-module__uw9ddG__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.ProfileCard-module__uw9ddG__name {
+  font-size: 1.8rem;
+  margin: 8px 0;
+}
+
+.ProfileCard-module__uw9ddG__email {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.ProfileCard-module__uw9ddG__bio {
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.ProfileCard-module__uw9ddG__editButton {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ProfileCard-module__uw9ddG__editButton:hover {
+  background: #005bb5;
+}
+
+
+/* [project]/src/app/components/styles/EditProfileForm.module.css [app-client] (css) */
+.EditProfileForm-module__BjI_xW__form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.EditProfileForm-module__BjI_xW__field {
+  margin-bottom: 16px;
+}
+
+.EditProfileForm-module__BjI_xW__field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.EditProfileForm-module__BjI_xW__field input, .EditProfileForm-module__BjI_xW__field textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.EditProfileForm-module__BjI_xW__avatarPreview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 8px;
+}
+
+.EditProfileForm-module__BjI_xW__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.EditProfileForm-module__BjI_xW__saveButton {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.EditProfileForm-module__BjI_xW__saveButton:hover {
+  background: #218838;
+}
+
+.EditProfileForm-module__BjI_xW__cancelButton {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.EditProfileForm-module__BjI_xW__cancelButton:hover {
+  background: #c82333;
+}
+
+
+/* [project]/src/app/profile/Profile.module.css [app-client] (css) */
+.Profile-module__HLzWoG__container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.Profile-module__HLzWoG__loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+
+/*# sourceMappingURL=src_app_fc6212._.css.map*/
