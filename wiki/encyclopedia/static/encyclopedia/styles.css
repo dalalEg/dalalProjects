@@ -36,3 +36,10 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+.entry {
+    margin-right: 8px;
+    color: black;
+}
+.error{
+    color: red;
+}
