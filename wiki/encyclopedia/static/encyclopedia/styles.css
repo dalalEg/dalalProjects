@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: white;
+    font-size: medium;
 }
 
 code {
@@ -37,9 +38,29 @@ textarea {
     margin-top: 5px;
 }
 .entry {
-    margin-right: 8px;
+    margin-right: 32px;
     color: black;
+    font-size: 32px;
+    text-decoration: underline;
 }
-.error{
+.Error{
     color: red;
+    margin-top: 160px;
+    text-align: center; 
+    position: relative;
+}
+.entries{
+    margin-top: 60px;
+    position: relative;
+}
+.add{
+    margin-top: 60px;
+    width: 800px;
+    display:block;
+}
+.content{
+  position: relative;
+}
+.title{
+    position: relative;
 }
