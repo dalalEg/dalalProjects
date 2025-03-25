@@ -2,10 +2,7 @@
 
 {% block body %}
     <h2>Active Listings</h2>
-    <form action="{% url 'search' %}" method="GET">
-        <input class="search" type="text" name="q" placeholder="Search for Auction">
-        <button class="button" type="submit">Search</button>
-    </form>                   
+    {% if auctions %}
     <ul class="listing">
         {% for auction in auctions %}
             <li class="Element">
@@ -24,5 +21,9 @@
             </li>
         {% endfor %}
     </ul>
+    {% else %}
+        <p>No auctions found</p>
+    {% endif %}
+   
 
 {% endblock %}

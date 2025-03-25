@@ -9,15 +9,34 @@ from .models import User, Auction, Comment,Bid, Category
 from django.contrib.auth import update_session_auth_hash
 
 
+ #Show all active auctions on the index page 
+ # Or search for a specific auction (search by title)
 def index(request):
-     auctions = Auction.objects.all().filter(active=True)
-     return render(request, "auctions/index.html", {
+    if request.GET.get("q"):
+        return HttpResponseRedirect(reverse("search"))
+    auctions = Auction.objects.all().filter(active=True)
+    return render(request, "auctions/index.html", {
                 "auctions": auctions
             })
 
 
+# Search for an auction by title (check if the title contains the query)
+# Display the search results
+def search(request):
+    query = request.GET.get("q", "").strip()  # Ensure query is not None
+    auctions = Auction.objects.filter(title__icontains=query ,active=True ) if query else [] 
+    return render(request, "auctions/search.html", {
+        "auctions": auctions
+    })
+
+
+# Show the listing page of a specific auction
+# Allow users to bid, comment, add to watchlist, and close the auction
+# If the auction is closed, redirect to a closed page
+# If the user is not authenticated, display the listing page without the bid, comment, and watchlist features
+# If the user is authenticated, display the listing page with all features
+# If the page is closed and the user is the highest bidder, display a message
 def listingPage(request, auction_id):
-    
     auction = Auction.objects.get(pk=auction_id)
     if not auction.active:
           return render(request, "auctions/closedPage.html", {
@@ -85,6 +104,10 @@ def listingPage(request, auction_id):
         })
 
 
+# Show the login page
+# Allow users to log in
+# If the user is authenticated, redirect to the index page
+# If the user is not authenticated, display the login page
 def login_view(request):
     if request.method == "POST":
 
@@ -109,11 +132,17 @@ def login_view(request):
         return render(request, "auctions/login.html")
 
 
+# Log out the user
+# Redirect to the index page
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse("index"))
 
 
+# Show the registration page
+# Allow users to register
+# If the user is authenticated, redirect to the index page
+# If the user is not authenticated, display the registration page
 def register(request):
     if request.method == "POST":
         username = request.POST["username"]
@@ -144,6 +173,10 @@ def register(request):
         return render(request, "auctions/register.html")
 
 
+# Create a new auction
+# Allow users to create a new auction
+# If the user is authenticated, display the create page
+@login_required
 def create(request):
     if request.method == "POST":
         
@@ -167,8 +200,7 @@ def create(request):
         })
 
 
-
-
+# Show the watchlist page
 @login_required
 def watchlist(request):
     User = request.user
@@ -176,15 +208,20 @@ def watchlist(request):
     return render(request, "auctions/watchlist.html", {
         "watchlist": watchlist
     })
+
+
+# Show all categories
 def categories(request):
     categories = Category.objects.all()
     return render(request, "auctions/categories.html", {
         "categories": categories
     })
   
+
+# Show all auctions in a specific category  
 def category(request, category):
     category = Category.objects.get(name=category)
-    category_id = category.id  # Use the numeric ID, not the string
+    category_id = category.id 
     auctions = Auction.objects.all().filter(category=category_id, active=True)
     return render(request, "auctions/category.html", {
         "category": category,
@@ -192,6 +229,9 @@ def category(request, category):
         
     })
 
+
+# Show the profile page
+# Display the user's auctions, won auctions, comments, and bids
 @login_required
 def profile(request):
     User = request.user
@@ -206,6 +246,8 @@ def profile(request):
         "bids": bids
     })
 
+
+# Show closed page
 def closed(request, auction_id):
     auction = Auction.objects.get(pk=auction_id)
     return render(request, "auctions/listingPage.html", {
@@ -213,6 +255,12 @@ def closed(request, auction_id):
     })
 
 
+# Change the user's password
+# If the password is invalid, display a message
+# If the passwords do not match, display a message
+# If the password is not at least 8 characters long, display a message
+# If the password is changed successfully, display a message
+@login_required
 def changePassword(request):
     if request.method == "POST":
         user = request.user
@@ -239,6 +287,12 @@ def changePassword(request):
     else:
         return render(request, "auctions/changePassword.html")
     
+
+# Add a new category
+# If the category already exists, display a message
+# If the category name is empty, display a message
+# If the category is created successfully, redirect to the create page
+@login_required    
 def addCategory(request):
     if request.method == "POST":
         new_category = request.POST.get("new_category", "").strip()
@@ -260,7 +314,9 @@ def addCategory(request):
     else:
         return render(request, "auctions/addCategory.html")
         
-      
+
+# Show the user's bids page
+@login_required      
 def bids(request):
     User = request.user
     bids = Bid.objects.all().filter(user=User)
@@ -268,6 +324,9 @@ def bids(request):
         "bids": bids
     })
 
+
+# Show the user's auctions page
+@login_required
 def auctions(request):
     User = request.user
     auctions = User.auctions.all()
@@ -275,6 +334,9 @@ def auctions(request):
         "auctions": auctions
     })
 
+
+# Show the user's won auctions page
+@login_required
 def won(request):
     User = request.user
     won = User.won_auctions.all().filter(active=False)
@@ -282,6 +344,9 @@ def won(request):
         "won": won
     })
 
+
+# Show the user's comments page
+@login_required
 def comments(request):
     User = request.user
     comments = Comment.objects.all().filter(user=User)
