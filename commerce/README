@@ -1,21 +1,17 @@
-README.
-Your website must meet the following requirements:
+Specification
+Complete the implementation of your auction site. You must fulfill the following requirements:
 
-Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
-On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
-On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
-Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
-On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
-On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options)
-Find pages with… “all these words:”
-Find pages with… “this exact word or phrase:”
-Find pages with… “any of these words:”
-Find pages with… “none of these words:”
-Like Google’s own Advanced Search page, the four options should be stacked vertically, and all of the text fields should be left aligned.
-Consistent with Google’s own CSS, the “Advanced Search” button should be blue with white text.
-When the “Advanced Search” button is clicked, the user should be taken to the search results page for their given query.
-Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
-You may encounter a redirect notice when using the “I’m Feeling Lucky” button. Not to worry! This is an expected consequence of a security feature implemented by Google.
-The CSS you write should resemble Google’s own aesthetics.
+Models: Your application should have at least three models in addition to the User model: one for auction listings, one for bids, and one for comments made on auction listings. It’s up to you to decide what fields each model should have, and what the types of those fields should be. You may have additional models if you would like.
+Create Listing: Users should be able to visit a page to create a new listing. They should be able to specify a title for the listing, a text-based description, and what the starting bid should be. Users should also optionally be able to provide a URL for an image for the listing and/or a category (e.g. Fashion, Toys, Electronics, Home, etc.).
+Active Listings Page: The default route of your web application should let users view all of the currently active auction listings. For each active listing, this page should display (at minimum) the title, description, current price, and photo (if one exists for the listing).
+Listing Page: Clicking on a listing should take users to a page specific to that listing. On that page, users should be able to view all details about the listing, including the current price for the listing.
+If the user is signed in, the user should be able to add the item to their “Watchlist.” If the item is already on the watchlist, the user should be able to remove it.
+If the user is signed in, the user should be able to bid on the item. The bid must be at least as large as the starting bid, and must be greater than any other bids that have been placed (if any). If the bid doesn’t meet those criteria, the user should be presented with an error.
+If the user is signed in and is the one who created the listing, the user should have the ability to “close” the auction from this page, which makes the highest bidder the winner of the auction and makes the listing no longer active.
+If a user is signed in on a closed listing page, and the user has won that auction, the page should say so.
+Users who are signed in should be able to add comments to the listing page. The listing page should display all comments that have been made on the listing.
+Watchlist: Users who are signed in should be able to visit a Watchlist page, which should display all of the listings that a user has added to their watchlist. Clicking on any of those listings should take the user to that listing’s page.
+Categories: Users should be able to visit a page that displays a list of all listing categories. Clicking on the name of any category should take the user to a page that displays all of the active listings in that category.
+Django Admin Interface: Via the Django admin interface, a site administrator should be able to view, add, edit, and delete any listings, comments, and bids made on the site.
 
-YOUTUBE LINk:https://youtu.be/nVpOxWgqlBk
+YOUTUBE LINk:https://youtu.be/LYHRm6LhJHo
