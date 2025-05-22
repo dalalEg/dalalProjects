@@ -72,7 +72,10 @@ More projects from CS50W such as:
    git clone https://github.com/yourusername/cs50w-projects.git
    cd cs50w-projects
 2. Follow the setup instructions in each project folder's README (or inside the project code).
-
 3. Run the Django server locally to test the backend projects:
    ```bash
-  python manage.py runserver
+   python manage.py runserver
+📄 License
+These projects were completed as part of Harvard’s CS50W course. For educational use and portfolio demonstration.
+
+
