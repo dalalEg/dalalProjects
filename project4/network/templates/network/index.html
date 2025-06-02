@@ -1,0 +1,21 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+
+        
+        <div class="profile"> </div>
+        <div class ="NewPost">
+            <h3>New Post</h3>
+            
+            <textarea class="form-control" id="post_content" placeholder="Body"></textarea>
+            <input type="submit" id="post_submit" class="btn btn-primary"/>
+        </div>
+        <div class="following"></div>
+        <div class="followers"></div>
+    {%endif%}
+    <div class = "posts"> </div>
+    hhhhhh
+{% endblock %}
+
+
