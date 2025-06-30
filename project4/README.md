@@ -80,7 +80,6 @@ A Django-powered social network app that mimics core features of platforms like 
 - **Database**: SQLite (default, can be switched to PostgreSQL)
 - **Auth**: Django’s built-in user system
 - **API**: REST-like endpoints with JSON responses
-- **Deployment**: *[optional – fill this if deployed]*
 
 ---
 
@@ -90,7 +89,7 @@ A Django-powered social network app that mimics core features of platforms like 
 
 ## 👩‍💻 Author
 
-Dalal Eghbaria — [LinkedIn](www.linkedin.com/in/dalal-eghbaria-a9283820a)
+Dalal Eghbaria — (www.linkedin.com/in/dalal-eghbaria-a9283820a)
 
 ---
 
