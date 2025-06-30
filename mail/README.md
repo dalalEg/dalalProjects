@@ -10,7 +10,7 @@ This is a single-page email client built using JavaScript, HTML, and CSS, as par
 - 📦 **Archive/Unarchive**: Manage emails with archive functionality.
 - 🔁 **Reply**: Smart reply with pre-filled fields referencing original message.
 
-## Technical Highlights
+## Technical Highlights  
 
 - Pure JavaScript frontend (inbox.js) for all functionality.
 - Uses `fetch` to interact with a Django REST API.
