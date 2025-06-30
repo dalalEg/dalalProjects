@@ -3,7 +3,6 @@
 This repository contains completed projects from **CS50’s Web Programming with Python and JavaScript**, offered by Harvard University. The course focuses on full-stack web development, including frontend and backend technologies such as HTML, CSS, JavaScript, Python, Django, SQL, and Git.
 
 ---
-Perfect! Based on your app and enhancements, here's a README-style section matching the tone and structure of the example you gave:
 
 ## 🌐 Network
 A Twitter-style social network built with Django and JavaScript as part of CS50W Project 4.
