@@ -3,7 +3,41 @@
 This repository contains completed projects from **CS50’s Web Programming with Python and JavaScript**, offered by Harvard University. The course focuses on full-stack web development, including frontend and backend technologies such as HTML, CSS, JavaScript, Python, Django, SQL, and Git.
 
 ---
+Perfect! Based on your app and enhancements, here's a README-style section matching the tone and structure of the example you gave:
 
+## 🌐 Network
+A Twitter-style social network built with Django and JavaScript as part of CS50W Project 4.
+
+### Features
+- User registration, login, logout, and session handling
+
+- Create, edit, and like/unlike posts
+
+- Follow/unfollow users with follower/following lists
+
+-Dynamic profile pages with user stats
+
+- Comments on posts with timestamps and sorting
+
+- Pagination across posts and profiles
+
+- SPA behavior via JavaScript (history.pushState, fetch, etc.)
+
+### Extras
+
+- View who liked or commented on posts via profile
+
+- Navigate directly to user profiles via clickable usernames
+
+- Friendly URLs like /profile/<username> and /posts/<id>
+
+- Only owners can edit their posts or delete their comments
+
+### 🚧 Coming Soon
+- Delete comment functionality
+
+- Threaded replies to comments (nested discussion)
+ - Highlight active user in followers/following lists
 ## 📬 Mail
 
 A single-page email client built using **JavaScript, HTML, and CSS**, interacting with a RESTful backend.
