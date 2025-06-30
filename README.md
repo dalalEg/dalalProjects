@@ -14,7 +14,7 @@ A Twitter-style social network built with Django and JavaScript as part of CS50W
 
 - Follow/unfollow users with follower/following lists
 
--Dynamic profile pages with user stats
+- Dynamic profile pages with user stats
 
 - Comments on posts with timestamps and sorting
 
