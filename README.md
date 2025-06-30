@@ -37,6 +37,9 @@ A Twitter-style social network built with Django and JavaScript as part of CS50W
 
 - Threaded replies to comments (nested discussion)
  - Highlight active user in followers/following lists
+
+---
+
 ## 📬 Mail
 
 A single-page email client built using **JavaScript, HTML, and CSS**, interacting with a RESTful backend.
