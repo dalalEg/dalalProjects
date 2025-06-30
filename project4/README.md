@@ -21,7 +21,7 @@ A Django-powered social network app that mimics core features of platforms like 
   - Follow and unfollow users
   - View list of followers and following
   - Click usernames to navigate to their profiles
-  - Highlight current user in the list
+  - Highlight current user in the list  (in process)
 
 - **Profiles**
   - View any user's profile
@@ -35,8 +35,8 @@ A Django-powered social network app that mimics core features of platforms like 
 - **Comments**
   - Add comments to posts
   - View all comments (newest first)
-  - Timestamps on comments (relative time e.g. "5 minutes ago")
-  - Comments displayed in dedicated section per post
+  - Timestamps on comments (relative time e.g. "5 minutes ago") (in process)
+  - Comments displayed in dedicated section per post 
 
 ---
 
@@ -84,14 +84,13 @@ A Django-powered social network app that mimics core features of platforms like 
 
 ---
 
-## 📸 Screenshots (Optional)
-Add screenshots showing the feed, profiles, edit post, comment sections, etc.
+## 📸 Screenshots 
 
 ---
 
 ## 👩‍💻 Author
 
-Dalal Eghbaria — [LinkedIn](https://www.linkedin.com) | [Portfolio](https://your-portfolio.com) *(Update links)*
+Dalal Eghbaria — [LinkedIn](www.linkedin.com/in/dalal-eghbaria-a9283820a)
 
 ---
 
