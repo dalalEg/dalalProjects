@@ -89,7 +89,6 @@ Django, Markdown, HTML Templates, Form Handling, Search Logic
 ## 🧠 Coming Soon: More Projects
 
 More projects from CS50W such as:
-- Network (Twitter clone with followers, likes, and JavaScript-based SPA interface)
 - Capstone project (optional final independent full-stack project)
 
 ---
