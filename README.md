@@ -102,16 +102,31 @@ More projects from CS50W such as:
 ---
 
 ## 📂 Setup Instructions
+🛠️ Getting Started
+To clone and run this repository locally:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/cs50w-projects.git
-   cd cs50w-projects
-2. Follow the setup instructions in each project folder's README (or inside the project code).
-3. Run the Django server locally to test the backend projects:
-   ```bash
-   python manage.py runserver
-📄 License
-These projects were completed as part of Harvard’s CS50W course. For educational use and portfolio demonstration.
-
-
+1. Clone the repository
+ ``` bash
+ git clone https://github.com/dalalEg/dalalProjects.git
+ cd dalalProjects
+ ```
+2. Set up a virtual environment (recommended)
+ ```bash
+ python -m venv venv
+ source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+3. Install dependencies
+ Each project has its own Django app and requirements.txt (if needed).
+ You can install Django globally or per project:
+ pip install django
+ Or install from a specific project's requirements.txt (if available):
+ ``` bash
+ cd project4  # Or wiki, commerce, etc.
+ pip install -r requirements.txt
+ ```
+4. Run the server
+ ```bash
+ python manage.py migrate
+ python manage.py runserver
+```
+Then visit http://127.0.0.1:8000 in your browser.
