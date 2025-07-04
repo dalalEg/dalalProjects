@@ -107,7 +107,7 @@ To clone and run this repository locally:
 1. Clone the repository
  ``` bash
  git clone https://github.com/dalalEg/CS50W.git
- cd dalalProjects
+ cd CS50W
  ```
 2. Set up a virtual environment (recommended)
  ```bash
